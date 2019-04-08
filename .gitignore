@@ -1,0 +1,64 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+*.Po
+*.qm
+src/qt/*
+src/test/*
+*.dirstamp
+*.Plo
+*.log
+build-aux/*
+src/config/*
+/autom4te.cache/*
+Makefile*
+configure
+src/bitcoind
+src/bitcoin-cli
+src/bitcoin-tx
+share/setup.nsi
+share/qt/info.plist
+test/*
+contrib/*
+doc/*
+/libtool
+/config.*
+/aclocal.m4
+*.pc
+src/bench/data/block*.h
+*.sublime-*
+
+
+src/.libs/
+share/qt/Info.plist
+/db4/
