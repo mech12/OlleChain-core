@@ -15,24 +15,18 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd ~
-git clone https://github.com/zhq422194011/bitcoin.git
-cd ~
-mkdir bitcoin/db4/
+mkdir bitcoin_db4/
+cd bitcoin_db4
 wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
 tar -xzvf db-4.8.30.NC.tar.gz
 rm db-4.8.30.NC.tar.gz
 cd db-4.8.30.NC/build_unix/
-../dist/configure --enable-cxx --disable-shared --with-pic --prefix=/home/theusername/bitcoin/db4/
+../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$HOME/bitcoin_db4/
 make install
 
-cd ~/bitcoin/
-./autogen.sh
-./configure LDFLAGS="-L/home/theusername/bitcoin/db4/lib/" CPPFLAGS="-I/home/theusername/bitcoin/db4/include/"
+#cd ~/bitcoin/
+#./autogen.sh
+#./configure LDFLAGS="-L/home/theusername/bitcoin/db4/lib/" CPPFLAGS="-I/home/theusername/bitcoin/db4/include/"
 
-make -s -j5
+#make -s -j5
 
-cd ~
-mkdir .bitcoin
-mkdir .bitcoin2
-cp bitcoin/bitcoin.conf .bitcoin/bitcoin.conf
-cp bitcoin/bitcoin.conf .bitcoin2/bitcoin.conf
