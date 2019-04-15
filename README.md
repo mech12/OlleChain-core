@@ -122,7 +122,7 @@ Differences from the original Bitcoin-core
 }
 ```
 
-## Ollek-Data prev-signing data
+## Olle-Data prev-signing data
 ```js
 
     var sign = g_G.bitcoin.signMessage('olle', OLLE_SIGN_PRIVATE_KEY );
