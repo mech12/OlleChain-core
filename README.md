@@ -28,9 +28,12 @@ Differences from the original Bitcoin-core
 
 How to find Olle-data transaction. 
 -------------------
-step 1 :  find transaction  included "OP_RETURN"
-step 2 :  olle colored coin value ( 0.00001013 ) in transaction vout list
-step 3 :  Decoding op_return's data and check sign field 
+
+* step 1 :  find transaction  included "OP_RETURN"
+
+* step 2 :  olle colored coin value ( 0.00001013 ) in transaction vout list
+
+* step 3 :  Decoding op_return's data and check sign field 
 
 
 ## step 3  example code 
